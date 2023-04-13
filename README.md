@@ -64,7 +64,9 @@ In order to play, the map must have only one exit, at least one object to collec
 
 The program checks all the requirements as well as if it can be solved, for example if the exit is not accessible by the player.
 
-If something is wrong, an error message will appear indicating the type of error found on the map.
+If something is wrong on the map, an error message will appear indicating the type of error found on the map.
+
+Maps containing enemies have an 'f' in the name (bonus).
 
 Example of valid map:
 ```shell
@@ -75,39 +77,43 @@ Example of valid map:
 1111111111111
 ```
 
-### The rules of the game
-
 
 ## Usage
-
-The program can be ran in two ways:
-```shell
-$> ./
-```
-```shell
-$> ./
-```
-
-
 
 You can use the rule **'make'** to compile the program and run it.
 ```shell
 $> make 
 ```
 
-With the rule **'make clean'** you can delete the program.
+And to compile the bonus **'make bonus'**
 ```shell
-$> make clean
-```
- 
-With the rules **'make fclean'** you can delete all the object files (*.o).
-```shell
-$> make fclean
+$> make bonus
 ```
 
+You can ran the game using:
+```shell
+$> ./so_long map/nameofmap.ber
+$> ./so_long_bonus map/nameofmap.ber
+```
 
-## Test it
+## Resources - MLX42 graphic library by 42
 
+To implement this project it is necessary to use a version of the [MLX42 library](https://github.com/codam-coding-college/MLX42).
 
-## Visualizer
+MLX42 is a performant, easy to use, cross-platform, minimal windowing graphics library to create graphical applications without having to work directly with the native windowing framework of the given operating system.
 
+It provides primitive tools to draw textures onto the window as well as modifying them at runtime as they get displayed on the window.
+
+### How to install?
+
+First, you need to install the platform [brew](https://github.com/kube/42homebrew) to be able to download the library MLX42. 
+
+Use the next comand to install **brew**:
+```shell
+brew install glfw
+```
+
+And then, use the next comand to download and install the **MLX42 library**:
+```shell
+curl -fsSL https://rawgit.com/kube/42homebrew/master/install.sh | zsh
+```
