@@ -108,12 +108,12 @@ It provides primitive tools to draw textures onto the window as well as modifyin
 
 First, you need to install the platform [brew](https://github.com/kube/42homebrew) to be able to download the library MLX42. 
 
-Use the next comand to install **brew**:
-```shell
-brew install glfw
-```
-
-And then, use the next comand to download and install the **MLX42 library**:
+And then, use the next comand to download and install the **brew**:
 ```shell
 curl -fsSL https://rawgit.com/kube/42homebrew/master/install.sh | zsh
+```
+
+Use the next comand to install **MLX42 library**:
+```shell
+brew install glfw
 ```
