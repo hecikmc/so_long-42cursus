@@ -23,7 +23,7 @@ This project is a small 2D game, whose requirements are:
 </table>
 
 
-#### Bonus part
+#### :checkered_flag: Bonus part :checkered_flag: 
 
 * Enemies are included on the map (between 0 and 2).
 * The player loses if he is hit by an enemy.
@@ -43,12 +43,37 @@ This project is a small 2D game, whose requirements are:
 * The project compiles with the 'norma' (Norminette).
 * The makefile compiles the program (and the librarys needed, libft and MLX42) with the name: **so_long**
 
-## Mandatory part
 
-### How it works?
+### Mandatory part
 
+<p align="center">
+<img width="609" alt="Screen Shot 2023-04-13 at 5 54 20 PM" src="https://user-images.githubusercontent.com/121127625/231816234-a99d65ae-da05-4128-826f-a992559f02a2.png">
+</p>
 
+The program receives as a parameter the map to play on (.ber extension), if is not valid, an advice will be show. 
+The player is able to move in 4 directions: up, down, left or right. The W, A, S and D keys will be used to move the player. The player cannot enter inside the walls.
 
+To exit the game simply close the window with ESC or by clicking on the :x:
+
+### Maps :earth_africa:
+
+The available maps are in the 'map' folder. 
+The map is composed of only 5 characters: 0 for an empty space, 1 for a wall, C for a collectible, E to exit the map, and P for starting position of the player.
+
+In order to play, the map must have only one exit, at least one object to collect, and only one player. The map must be rectangular and be closed by the borders with walls. 
+
+The program checks all the requirements as well as if it can be solved, for example if the exit is not accessible by the player.
+
+If something is wrong, an error message will appear indicating the type of error found on the map.
+
+Example of valid map:
+```shell
+1111111111111
+10010000000C1
+1000011111001
+1P0011E000001
+1111111111111
+```
 
 ### The rules of the game
 
