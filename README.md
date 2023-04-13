@@ -14,15 +14,14 @@ This project is a small 2D game, whose requirements are:
 * The goal of the player is to collect all the collectibles before leaving the map in the fewest number of moves.
 * Each movement of the player will be counted and displayed by the terminal.
 
-<p align="center">
-  <img src="[demo.gif](https://user-images.githubusercontent.com/121127625/231807710-bab6d89a-d62f-4e3f-86dd-a876caec6850.gif)" alt="mandatory so_long" />
-</p>
+<table align="center">
+  <td>
+  
+  ![mandatory solong](https://user-images.githubusercontent.com/121127625/231807710-bab6d89a-d62f-4e3f-86dd-a876caec6850.gif)
+  
+  </td>
+</table>
 
-<p align="center">
- 
-![mandatory solong](https://user-images.githubusercontent.com/121127625/231807710-bab6d89a-d62f-4e3f-86dd-a876caec6850.gif)
-
-</p>
 
 #### Bonus part
 
@@ -31,6 +30,13 @@ This project is a small 2D game, whose requirements are:
 * Each movement of the player will be counted and displayed by the game screen.
 * Sprite animations are included. 
 
+<table align="center">
+  <td>
+  
+  ![bonus so_long](https://user-images.githubusercontent.com/121127625/231814053-969c7a7b-31b5-445e-9101-bbba881d810d.gif)
+
+  </td>
+</table>
 
 
 * Project developed in 'C' language.
