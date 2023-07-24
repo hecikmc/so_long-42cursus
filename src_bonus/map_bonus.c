@@ -6,7 +6,7 @@
 /*   By: jmerchan <jmerchan@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 16:08:19 by jmerchan          #+#    #+#             */
-/*   Updated: 2023/04/12 16:23:12 by jmerchan         ###   ########.fr       */
+/*   Updated: 2023/07/24 19:17:09 by jmerchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ void	ft_readmap(t_game *game)
 		line = get_next_line(game->fd_map);
 		if (line == 0)
 			break ;
-		totalread = ft_strjoin(totalread, line);
+		totalread = ft_strjoinfree(totalread, line);
 		free(line);
 	}
 	if (totalread == 0 || totalread[0] == '\n')
