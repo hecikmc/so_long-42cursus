@@ -35,17 +35,17 @@ void	ft_drawgameleft(t_game *game)
 		while (x < game->col)
 		{
 			if (game->readmap[y][x] == '0')
-				ft_drawelement(game, game->floor_i, x, y);
+				ft_drawelement(game, game->t_floor, x, y);
 			else if (game->readmap[y][x] == '1')
-				ft_drawelement(game, game->wall_i, x, y);
+				ft_drawelement(game, game->t_wall, x, y);
 			else if (game->readmap[y][x] == 'P' && game->moves % 2 == 0)
-				ft_drawelement(game, game->player_i1left, x, y);
+				ft_drawelement(game, game->t1left_player, x, y);
 			else if (game->readmap[y][x] == 'P' && game->moves % 2 != 0)
-				ft_drawelement(game, game->player_i2left, x, y);
+				ft_drawelement(game, game->t2left_player, x, y);
 			else if (game->readmap[y][x] == 'C')
-				ft_drawelement(game, game->collect_i, x, y);
+				ft_drawelement(game, game->t_collect, x, y);
 			else if (game->readmap[y][x] == 'E')
-				ft_drawelement(game, game->exit_i, x, y);
+				ft_drawelement(game, game->t_exit, x, y);
 			x++;
 		}
 		y++;
