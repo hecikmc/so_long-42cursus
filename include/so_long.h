@@ -44,14 +44,7 @@ typedef struct s_game
 	int				moves;
 	int				dir;
 	mlx_t			*mlx;
-	mlx_image_t		*wall_i;
-	mlx_image_t		*floor_i;
-	mlx_image_t		*player_i1;
-	mlx_image_t		*player_i2;
-	mlx_image_t		*player_i1left;
-	mlx_image_t		*player_i2left;
-	mlx_image_t		*exit_i;
-	mlx_image_t		*collect_i;
+	mlx_image_t		*img;
 	mlx_texture_t	*t_wall;
 	mlx_texture_t	*t_floor;
 	mlx_texture_t	*t1_player;
@@ -68,7 +61,7 @@ void	ft_initstruct(t_game *game);
 //game.c
 void	ft_play(char *map, t_game *game);
 void	ft_drawgame(t_game *game);
-void	ft_drawelement(t_game *game, mlx_image_t *elem, int x, int y);
+void	ft_drawelement(t_game *game, mlx_texture_t *elem, int x, int y);
 
 //play.c
 void	ft_movep(mlx_key_data_t keydata, void *param);

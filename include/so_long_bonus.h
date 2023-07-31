@@ -52,15 +52,8 @@ typedef struct s_game
 	int				dir;
 	double			time;
 	mlx_t			*mlx;
-	mlx_image_t		*wall_i;
-	mlx_image_t		*floor_i;
-	mlx_image_t		*player_i1;
-	mlx_image_t		*player_i2;
-	mlx_image_t		*player_i1left;
-	mlx_image_t		*player_i2left;
-	mlx_image_t		*exit_i;
-	mlx_image_t		*collect_i;
-	mlx_image_t		*enemy_i;
+	mlx_image_t		*img;
+	mlx_image_t		*text;
 	mlx_texture_t	*t_wall;
 	mlx_texture_t	*t_floor;
 	mlx_texture_t	*t1_player;
@@ -102,7 +95,7 @@ void	ft_checkmap(char *map, t_game *game);
 //graphics.c
 void	ft_deletetextures(t_game *game);
 void	ft_openwindow(t_game *game);
-void	ft_drawelement(t_game *game, mlx_image_t *elem, int x, int y);
+void	ft_drawelement(t_game *game, mlx_texture_t *elem, int x, int y);
 void	ft_drawgame(t_game *game);
 void	ft_drawgameleft(t_game *game);
 

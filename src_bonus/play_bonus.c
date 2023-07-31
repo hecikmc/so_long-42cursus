@@ -87,17 +87,17 @@ void	ft_drawcharacters(t_game *game, char character, int x, int y)
 	if (character == 'P' && game->moves % 2 == 0)
 	{
 		if (game->dir == 1)
-			ft_drawelement(game, game->player_i1, x, y);
+			ft_drawelement(game, game->t1_player, x, y);
 		else
-			ft_drawelement(game, game->player_i1left, x, y);
+			ft_drawelement(game, game->t1left_player, x, y);
 	}
 	else if (character == 'P' && game->moves % 2 != 0)
 	{
 		if (game->dir == 1)
-			ft_drawelement(game, game->player_i2, x, y);
+			ft_drawelement(game, game->t2_player, x, y);
 		else
-			ft_drawelement(game, game->player_i2left, x, y);
+			ft_drawelement(game, game->t2left_player, x, y);
 	}
 	else if (character == 'F')
-		ft_drawelement(game, game->enemy_i, x, y);
+		ft_drawelement(game, game->t_enemy, x, y);
 }

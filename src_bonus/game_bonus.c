@@ -45,7 +45,8 @@ void	ft_drawmoves(t_game *game)
 	char	*mov;
 
 	mov = ft_itoa(game->moves);
-	mlx_put_string(game->mlx, mov, 22, 20);
+	mlx_delete_image(game->mlx, game->text);
+	game->text = mlx_put_string(game->mlx, mov, 22, 20);
 	free(mov);
 }
 
